@@ -89,7 +89,7 @@ if model:
     
     # Visualisasi tren pasien
     fig = px.line(df_prediksi, x='Bulan', y=['Jumlah Pasien 2024', 'Prediksi 2025'], markers=True,
-                  title=f'📊 Visualisasi Data Pasien Tahun 2024 dan Prediksi 2025 ({jenis_dokter_text})')
+                  title=f'📊 Tren Pasien Tahun 2024 dan Prediksi 2025 ({jenis_dokter_text})')
     st.plotly_chart(fig)
     
     # ===========================
@@ -103,8 +103,8 @@ if model:
     wkt_optimal_dokter = ((wkt_per_month * stp) / 4) / 60
     
     st.subheader(f"📌 Kebutuhan SDM {jenis_dokter_text}")
-    st.write(f"👨‍⚕ *Jumlah Dokter yang Dibutuhkan:* {final_sdm:.0f} dokter")
-    st.write(f"⏳ *Waktu Optimal per Minggu:* {wkt_optimal_dokter:.0f} jam")
+    st.write(f"👨‍⚕ Jumlah Dokter yang Dibutuhkan: {final_sdm:.0f} dokter")
+    st.write(f"⏳ Waktu Optimal per Minggu: {wkt_optimal_dokter:.0f} jam")
     
     # ===========================
     # 🔢 Input Manual untuk Prediksi Pasien
@@ -117,8 +117,8 @@ if model:
         final_sdm_manual = np.ceil(bkt_manual / (wkt_per_month * stp))
         wkt_optimal_dokter_manual = ((wkt_per_month * stp) / 4) / 60
         
-        st.write(f"👨‍⚕ *Jumlah Dokter (Manual):* {final_sdm_manual:.0f} dokter")
-        st.write(f"⏳ *Waktu Optimal per Minggu (Manual):* {wkt_optimal_dokter_manual:.0f} jam")
+        st.write(f"👨‍⚕ Jumlah Dokter (Manual): {final_sdm_manual:.0f} dokter")
+        st.write(f"⏳ Waktu Optimal per Minggu (Manual): {wkt_optimal_dokter_manual:.0f} jam")
 
 else:
     st.warning("⚠ Data prediksi tidak ditemukan. Pastikan model sudah dimuat dengan benar.")
