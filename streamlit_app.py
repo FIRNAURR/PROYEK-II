@@ -89,7 +89,7 @@ if model:
     
     # Visualisasi tren pasien
     fig = px.line(df_prediksi, x='Bulan', y=['Jumlah Pasien 2024', 'Prediksi 2025'], markers=True,
-                  title=f'📊 Tren Pasien Tahun 2024 dan Prediksi 2025 ({jenis_dokter_text})')
+                  title=f'📊 Visualisasi Data Pasien Tahun 2024 dan Prediksi 2025 ({jenis_dokter_text})')
     st.plotly_chart(fig)
     
     # ===========================
