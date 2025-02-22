@@ -1,2 +1,2 @@
 statsmodels
-plotly.express as px
+plotly.express 
