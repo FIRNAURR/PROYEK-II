@@ -1,6 +1,6 @@
 statsmodels
-import numpy as np
-import pandas as pd
-import streamlit as st
-import pickle
-import plotly.express as px
+numpy as np
+pandas as pd
+streamlit as st
+pickle
+plotly.express as px
