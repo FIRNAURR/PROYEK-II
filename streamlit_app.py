@@ -24,7 +24,7 @@ st.markdown("""
 # ===========================
 # 🏥 Judul Aplikasi
 # ===========================
-st.markdown('<h1 class="title">Prediksi Jumlah Pasien dan Optimalisasi Pengadaan Tenaga Medis Dokter Pada Klinik Rahmani</span></h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="title">Prediksi Jumlah Pasien dan Optimalisasi Kebutuhan Tenaga Medis Dokter Pada Klinik Rahmani</span></h1>', unsafe_allow_html=True)
 
 # ===========================
 # 🩺 Pilih Jenis Dokter
